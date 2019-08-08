@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#3942E7">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="top|center"
+            android:background="#0000FF"
+            android:src="@drawable/ic_launcher_foreground"/>
+        <TextView
+            android:id="@+id/lbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:text="NAMA"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="480dp"
+            android:layout_margin="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="#83F069">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="nama"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/ps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:hint="password"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/psl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ps"
+                android:hint="ulang password"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/daftar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/psl"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="Daftar"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
